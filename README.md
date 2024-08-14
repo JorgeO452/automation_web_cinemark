@@ -4,38 +4,43 @@ The design pattern used for the project is POM. The tests are located in the *e2
 
 ### Install Cypress as a dependency in the cloned repository
 
-`npm install cypress --save-dev`
+```
+npm install cypress --save-dev
+```
 
 ### Command to run the test in headless mode
 
-`npx cypress run`
+```
+npx cypress run
+```
 
 ### Command to open the Cypress interface and run tests with step-by-step visualization
 
-`npx cypress open`
+```
+npx cypress open
+```
 
 ## Reports with Mochawesome
 
 ### Intall Mochawesome
 
-`npm install --save-dev mochawesome`
+```
+npm install --save-dev mochawesome
+```
 
 ### Config `cypress.config.js`
 
-`reporter: 'mochawesome',`
-
-`reporterOptions: {`
-
-`reportDir: 'cypress/reports/mochawesome',`
-
-`overwrite: false,`
-
-`html: true,`
-
-`json: true,`
-
-`},`
-
+```javascript
+reporter: 'mochawesome',
+reporterOptions: {
+reportDir: 'cypress/reports/mochawesome',
+overwrite: false,
+html: true,
+json: true,
+},
+```
 ### Command to execute
 
-`npx cypress run`
+```
+npx cypress run
+```
